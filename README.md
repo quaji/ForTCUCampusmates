@@ -1,0 +1,2 @@
+# ForTCUCumpusmates
+campusmateのお供に。
