@@ -294,6 +294,9 @@ class UserData{
 //     }
 //   }
 // );
+
+document.getElementById('startUp').innerText = "moduleありで開かれています。";
+
 const userData = new UserData();
 document.getElementById('inputPDF').addEventListener('change', function(event) {
   const file = event.target.files[0];

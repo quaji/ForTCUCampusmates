@@ -1,1 +1,1 @@
-window.alert("非対応ブラウザを使用中です。")
+document.getElementById('startUp').innerText = "module無しで開かれています。";
