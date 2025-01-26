@@ -1,0 +1,10 @@
+* {
+    background-color: white;
+    font: sans-serif;
+}
+
+h1#headerLabel {
+    text-align: center;
+    width:100%;
+    margin: 0 auto;
+}
