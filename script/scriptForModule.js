@@ -364,13 +364,13 @@ document.getElementById('inputPDF').addEventListener('change', function(event) {
 
 
 
-        document.getElementById('result').innerText = userData.credits[7];
+        // document.getElementById('result').innerText = userData.credits[7];
         
         userData.makeCSVFile("downloadButton","output2.csv");
 
         userData.createGPAGraphy("myChart");
 
-        console.log(userData);
+        // console.log(userData);
 
       }catch(error){
         window.alert("error.code.We can't get and read this PDF.");
