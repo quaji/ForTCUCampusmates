@@ -290,8 +290,12 @@ document.getElementById('inputPDF').addEventListener('change', function(event) {
           document.getElementById('stepOne-03').innerText = i.toString();
           try{
             const page = await pdf.getPage(i);
+            document.getElementById('stepOne-04').innerText = i.toString();
+
             try{
               const text = await page.getTextContent();
+              document.getElementById('stepOne-05').innerText = i.toString();
+
               text.items.forEach(function(item){
                 flagNewLine = false;
                 loopFalseCount =0;
@@ -324,6 +328,8 @@ document.getElementById('inputPDF').addEventListener('change', function(event) {
                 else 
                 flagNewLine=false;
               });
+              document.getElementById('stepOne-06').innerText = i.toString();
+
             }catch(error){
               window.alert("error.code.We can't get contents in "+i+" page.");
             }
