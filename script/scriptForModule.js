@@ -249,13 +249,10 @@ class UserData{
         },
         options:
         {
-          title:{
-            display:true,
-            text:"sampleGraph",
-          },
           scales:{
             y:{
               beginAtZero:true,
+              max: 4.0,
             }
           }
         },
