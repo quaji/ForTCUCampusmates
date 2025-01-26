@@ -1,1 +1,1 @@
-document.getElementById('startUp').innerText = "module無しで開かれています。";
+document.getElementById('startUp').innerText = "起動失敗";
