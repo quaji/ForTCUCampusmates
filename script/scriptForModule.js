@@ -267,7 +267,7 @@ class UserData{
 }
 
 
-document.getElementById('startUp').innerText = "起動成功";
+document.getElementById('startUp').innerText = "T";
 
 const userData = new UserData();
 document.getElementById('inputPDF').addEventListener('change', function(event) {
@@ -277,14 +277,17 @@ document.getElementById('inputPDF').addEventListener('change', function(event) {
     reader.onload = async function(e) {
       const typedArray = new Uint8Array(e.target.result);
       try{
-        document.getElementById('stepOne').innerText = "PDF取得成功";
+        document.getElementById('stepOne-01').innerText = "T";
         const pdf = await pdfjsLib.getDocument(typedArray).promise;
         let textContent = '';
         let flagNewLine = false;
         let loopFalseCount =0;
         let loopDataCount = 0;
         let dataOfLesson = [];
+        document.getElementById('stepOne-02').innerText = "T";
+
         for (let i = 1; i <= pdf.numPages; i++) {
+          document.getElementById('stepOne-03').innerText = i.toString();
           try{
             const page = await pdf.getPage(i);
             try{
@@ -328,29 +331,29 @@ document.getElementById('inputPDF').addEventListener('change', function(event) {
             window.alert("error.code.We can't get ",i," page.");
           }
         }
-        document.getElementById('stepTwo').innerText = "PDF読み込み成功";
+        document.getElementById('stepTwo-01').innerText = "T";
         
         userData.makeTermData();
 
         userData.makeAccumTermData();
 
-        document.getElementById('stepThree').innerText = "データ作成成功";
+        document.getElementById('stepThree-01').innerText = "T";
         
 
         const container = document.getElementById("table-container");
         const table = userData.createResultTable();
         container.appendChild(table);
 
-        document.getElementById('stepFour').innerText = "表作成成功";
+        document.getElementById('stepFour-01').innerText = "T";
 
         
         userData.makeCSVFile("downloadButton","output2.csv");
 
-        document.getElementById('stepFive').innerText = "CSV作成成功";
+        document.getElementById('stepFive-01').innerText = "T";
 
         userData.createGPAGraphy("myChart");
 
-        document.getElementById('stepSix').innerText = "グラフ作成成功";
+        document.getElementById('stepSix-01').innerText = "T";
 
         // console.log(userData);
 

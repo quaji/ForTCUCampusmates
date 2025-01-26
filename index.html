@@ -11,13 +11,31 @@
     </head>
     <body>
         <h1 id="headerLabel">TCU 成績照会用</h1>
-        <p id="startUp"></p>
-        <p id="stepOne"></p>
-        <p id="stepTwo"></p>
-        <p id="stepThree"></p>
-        <p id="stepFour"></p>
-        <p id="stepFive"></p>
-        <p id="stepSix"></p>
+        <div id="startUp-table">
+            <table>
+                <tr>
+                    <th>起動</th><td id="startUp"></td>
+                </tr>
+                <tr>
+                    <th>PDF取得</th><td id="stepOne-01"></td><td id="stepOne-02"></td><td id="stepOne-03"></td>
+                </tr>
+                <tr>
+                    <th>PDF読込</th><td id="stepTwo-01"></td>
+                </tr>
+                <tr>
+                    <th>データ作成</th><td id="stepThree-01"></td>
+                </tr>
+                <tr>
+                    <th>表作成</th><td id="stepFour-01"></td>
+                </tr>
+                <tr>
+                    <th>CSV作成</th><td id="stepFive-01"></td>
+                </tr>
+                <tr>
+                    <th>グラフ作成作成</th><td id="stepSix-01"></td>
+                </tr>
+            </table>
+        </div>
         <input type="file" accept="application/pdf" id="inputPDF">
         <a id="downloadButton" href="">ここからcsv形式をダウンロード!</a>
         <div id="table-container"></div>
