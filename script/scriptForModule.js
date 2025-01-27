@@ -325,6 +325,7 @@ document.getElementById('inputPDF').addEventListener('change', function(event) {
                 else 
                 flagNewLine=false;
               });
+
               document.getElementById('stepOne-06').innerText = i.toString();
 
             }catch(error){
@@ -334,6 +335,8 @@ document.getElementById('inputPDF').addEventListener('change', function(event) {
             window.alert("error.code.We can't get ",i," page.");
           }
         }
+        userData.setNewData(loopDataCount,dataOfLesson);
+
         document.getElementById('stepTwo-01').innerText = "T";
         
         userData.makeTermData();
