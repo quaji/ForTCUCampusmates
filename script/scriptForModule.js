@@ -49,7 +49,7 @@ class UserData{
     else if(sellCount==2){
       if(data[0]=="ログインユーザ ：")this.name=data[1];
       else window.alert("error.code.DontExpectDataAmount:2");
-    }else window.alert("error.code.DontExpectDataAmount:"+data.length);
+    }else window.alert(`error.code.DontExpectDataAmount:${data.length},${data}`);
   }
 
   // 講義情報二次元配列から単位数と評価を抜き出して、開講時期ごとにまとめる。
