@@ -8,3 +8,9 @@ h1#headerLabel {
     width:100%;
     margin: 0 auto;
 }
+
+#startUp-table {
+    background-color: aliceblue;
+    border-radius: 50%;
+    border-color: white;
+}
