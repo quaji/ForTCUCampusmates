@@ -1,1 +1,1 @@
-document.getElementById('startUp').innerText = "T";
+document.getElementById('startUp').innerText = "N";
