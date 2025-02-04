@@ -12,9 +12,9 @@ h1#headerLabel {
 #startUp-table {
     background-color: aliceblue;
     border-radius: 10pt;
-    border-color: white;
 }
 
 #startUp-table * *, #startUp-table * {
     background-color: aliceblue;
+    border-radius: 10pt;
 }
