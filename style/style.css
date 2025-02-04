@@ -15,6 +15,6 @@ h1#headerLabel {
     border-color: white;
 }
 
-#startUp-table * {
+#startUp-table * *, #startUp-table * {
     background-color: aliceblue;
 }
